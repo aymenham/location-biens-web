@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-Regular.ttf');
+	src: url('../fonts/Poppins-Regular.ttf') format('ttf');
+	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav li {
+	padding-right: 10px;
+}
+
+.nav-link {
+	font-size: 1.1em;
+}
+
+#login-dp {
+	width: 270px;
+	padding: 14px 14px 0;
+	overflow: hidden;
+	background-color: #f7f7f7;
+}
+
+#login-dp .bottom {
+	width: 270px;
+	max-height: 50px;
+	background-color: rgba(255, 255, 255, .8);
+	border-top: 1px solid #ddd;
+	clear: both;
+	padding: 14px 15px;
+}
+
+#login-dp .bottom p {
+	text-align: left;
+	font-size: 18px;
+}
+
+#login-dp .btn-link{
+	padding: 5px 0px;
+	text-decoration: none;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.navbar2:after {
+	content: "";
+	background: -webkit-linear-gradient(top, rgba(101, 101, 101, 0.8) 0%,
+		rgb(173, 173, 173) 12%, rgb(221, 221, 221) 30%, rgb(255, 255, 255)
+		100%);
+	display: block;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.navbar2 li {
+	padding-right: 15px;
+}
+
+.carousel-inner img {
+	height: 100%;
+	width: 100%;
+}
+
+.card {
+	border: 0px;
+}
+
+.reserve .prix {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.reserve #nb {
+	color: #298AC2;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.reserve #da {
+	font-size: 120%;
+}
+#dateDebut{
+	width: 160px;
+    height: 36px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #c6c6c6;
+    font-size: 18px;
+    padding-left: 5px;
+    position: relative;
+    top: 3px;
+}
+
+#result {
+	margin: 10px 0px;
+}
+
+.review .valide {
+	color: gold;
+}
+
+.fa-chart-area, .fa-door-open, .fa-align-center, .fa-question {
+	font-size: 45px;
+	padding: 10px 0;
+}
+
+.details {
+	color: gray;
+	margin-right: 40px;
+}
+
+.details .d-block {
+	color: black;
+}
+
+footer {
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+
+footer a, a:hover {
+	color: #d5d5d5;
+}
+
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+hr.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 88%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+@media ( max-width :576px) {
+	#carouselControls {
+		height: 40%;
+	}
+}
+
+@media ( min-width :576px) {
+	#carouselControls {
+		height: 60%;
+	}
+}
+
+#cc {
+	margin: auto;
+}
+
+button.ui-datepicker-current {
+	display: none;
+}
+
+.ui-datepicker {
+	z-index: 9999 !important;
+}
+
+#open-review-box{
+	color: white;
+	position: relative;
+	left: -15px;
+}
+.commentaire{
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-top: 5px;
+}

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Authentification</title>
+<meta charset="utf-8">
+<link rel="shortcut icon" type="img/png" href="http://localhost:8080/agence/images/img/flavicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="style/bootstrap/js/jquery.min.js"></script>
+<link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+<script src="style/bootstrap/js/bootstrap.min.js"></script>
+<link href="style/css/Authentification.css" rel="stylesheet">
+<link href="style/fa/css/fontawesome-all.min.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img
+				src="images/img/ekrili_137x60.png"></a>
+		</div>
+	</nav>
+	<div class="modal-dialog text-center">
+		<div class="col-sm-8 main-section">
+			<div class="modal-content">
+				<h5>Se connecter</h5>
+				<div class="hline"></div>
+				<form class="col-12" method="POST"
+					action="http://localhost:8080/agence/AuthentificationServlet">
+					<input type="hidden" name="hidden" value="Authentification">
+					<div class="form-group">
+						<i class="fas fa-user"></i><input type="text" name="login" class="form-control"
+							placeholder="Pseudo ou Email">
+					</div>
+					<div class="form-group">
+						<i class="fas fa-lock"></i><input type="password"
+							class="form-control" name="mdp" placeholder="Mot de passe">
+					</div>
+					<button type="submit" class="btn">
+						<i class="fas fa-sign-in-alt"></i> Connexion
+					</button>
+				</form>
+				<div class="forgot">
+					<a href="http://localhost:8080/agence/motDePasseOublie.html">Mot de passe oublié?</a>
+				</div>
+				<div class="hline"></div>
+				<p>
+					Pas de compte encore?<br>
+					<a href="http://localhost:8080/agence/Inscription.html">Inscrivez-vous ici</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p>©2018 ekrili. Tous droits réservés.</p>
+	</footer>
+</body>
+</html>

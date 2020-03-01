@@ -1,0 +1,392 @@
+<html>
+    <head>
+        <title>Aide</title>
+        <link rel="shortcut icon" type="img/png" href="http://localhost:8080/agence/images/img/flavicon.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="style/bootstrap/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+        <script src="style/bootstrap/js/bootstrap.min.js"></script>
+        <link href="style/css/aide.css" rel="stylesheet">
+        <link href="style/fa/css/fontawesome-all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://localhost:8080/agence/index.jsp"><img
+                                                                                           src="images/img/ekrili_137x60.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="http://localhost:8080/agence/aide.html">Aide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/agence/conditions.html">Conditions générales</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/agence/AjouterBien.jsp">
+                                <button type="button" class="btn btn-outline-dark" style="border-radius: 17px;">+ Louer ma maison</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container main bg-white pt-4">
+            <h1>Aide</h1>
+            <nav>
+                <div class="nav nav-tabs mb-4 proloc" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"><i class="fas fa-edit"></i> Locataire</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"><i class="fas fa-home"></i> Propriétaire</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row">
+                        <div class="col-3 mb-3">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home">Tous savoir avant de louer chez Ekrili</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" >Les détails de la location</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages">Autres questions</a>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home">
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t1"><a href="#" class="btn btn-light">Comment louer un bien?</a></h2>
+                                        <div class="wrapper wrapper1">
+                                            <p>Inscrivez-vous gratuitement, puis remplissez votre profil correctement, afin de rassurer vos éventuels hôtes.</p>
+                                            <p>Faites votre recherche dans la région où vous voulez louer un bien.</p>
+                                            <p>Comparez les bien trouvées et faites une ou plusieurs réservations.</p>
+                                            <p>Lorsqu’un propriétaire accepte votre demande, vous devriez payer votre location pour la confirmer.</p>
+                                            <p>En contactant plusieurs hôtes vous optimisez vos chances d'avoir une réponse positive.</p>
+                                            <p>Retrouvez l’hôte à l'heure convenue pour récupérer les clefs du bien.</p>
+                                            <p>L’hôte apportera le Papier de déclaration d’hébergement, ainsi que les clés du bien.</p>
+                                            <p>Après la location, évaluez l’hôte et son bien sur le site.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t2"><a href="#" class="btn btn-light">Comment est calculé le prix d'une location?</a></h2>
+                                        <div class="wrapper wrapper2">
+                                            <p>Le prix de location est calculé en fonction de La durée de location.</p>
+                                            <p>Les prix affichés sur le site incluent les frais de service de Ekrili.</p>         
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t3"><a href="#" class="btn btn-light">Quels types de biens puis-je louer sur Ekrili?</a></h2>
+                                        <div class="wrapper wrapper3">
+                                            <p>Vous allez trouver une multitude de choix de biens classées par type : Maison, Appartement, Garage, Terrain.</p>           
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t4"><a href="#" class="btn btn-light">Puis-je louer un bien adaptée pour les personnes à mobilité reduite?</a></h2>
+                                        <div class="wrapper wrapper4">
+                                            Oui tout à fait, certains de nos propriétaires proposent des biens aménagées pour l’accueil de personne à mobilité réduite.           
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t5"><a href="#" class="btn btn-light">Comment contacter ekrili?</a></h2>
+                                        <div class="wrapper wrapper5">
+                                            <p>Vous puvez nous contactez par l'adresse mail : ekriliagency@gmail.com, ou par le numero du service client: +213 658 087 841.</p>
+                                            <p>Vous pourrez même trouver vous-même des réponses à vos questions sans avoir à nous contacter grâce à nos articles d'aide !</p>
+                                            <p>Notre équipe de service client est joignable tous les jours, sauf le vendredi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile">
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t6"><a href="#" class="btn btn-light">Comment se déroule une location classique?</a></h2>
+                                        <div class="wrapper wrapper6">
+                                            <p>Une fois la location confirmée et payée, voici les étapes à suivre pour son bon déroulement :</p>
+                                            <p>- Arrivez à l'heure au RDV.</p>
+                                            <p>- Présentez l'original de votre pièce d’identité.</p>
+                                            <p>- Signez le contrat et payez les frais de location.</p>
+                                            <p>- Le propriétaire va vous donnez les clefs du bien.</p>
+                                            <p>- Restituez les clefs à la fin de votre séjour.</p>
+                                            <p>Evaluez la location pour partager votre expérience et aider les prochains visiteurs à choisir un bien sur ekrili.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t7"><a href="#" class="btn btn-light">Dois-je nettoyer le bien à la fin de la location?</a></h2>
+                                        <div class="wrapper wrapper7">
+                                            <p>Tâchez de rendre le bien dans le même état dans lequel vous l’aviez reçu.</p>
+                                            <p>C’est important aux yeux de vos hôtes, qui vont en tenir compte lors de leurs évaluations.</p>         
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t8"><a href="#" class="btn btn-light" style="height: 80px;"><p style="white-space: pre-wrap;">Comment signaler des dégats déja existants avant le début de la location?</p></a></h2>
+                                        <div class="wrapper wrapper8">
+                                            <p>Si vous observez des dégâts avant le début de votre location, vous devez le signaler sur le contrat de location lors de l’état des lieux, et prendre en photo les dégâts en question afin de les envoyer au service réclamation.</p>           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-messages">
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t9"><a href="#" class="btn btn-light">Que faire si j'ai oublié mon mot de passe?</a></h2>
+                                        <div class="wrapper wrapper9">
+                                            <p>Si vous n'arrivez pas à vous connecter, essayez de réinitialiser votre mot de passe en cliquant sur "Mot de passe oublié" dans la fenêtre de connexion.</p>
+                                            <p>Si vous ne recevez pas l'email de réinitialisation du mot de passe :</p>
+                                            <p>- Patientez quelques minutes</p>
+                                            <p>- Vérifiez la section courrier indésirable (ou spam) de votre boîte mail</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t10"><a href="#" class="btn btn-light" style="height: 80px;"><p style="white-space: pre-wrap;">Que faire si j'ai oublié mon mot de passe ou je n'arrive pas à me connecter à mon compte?</p></a></h2>
+                                        <div class="wrapper wrapper10">
+                                            <p>Si vous ne parvenez pas à vous connecter à votre compte, deux possibilités :</p>
+                                            <p>- Votre mot de passe est incorrect : cliquez sur « mot de passe oublié ». Vous recevrez un email qui contient votre nouveau mot de passe.</p>
+                                            <p>- Vous essayez de vous connecter avec la mauvaise adresse mail : Vérifiez vos différentes adresses mails pour retrouver avec laquelle vous vous connectez sur Ekrili.</p> 
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t11"><a href="#" class="btn btn-light">Comment évaluer une location?</a></h2>
+                                        <div class="wrapper wrapper11">
+                                            <p>Les évaluations sont importantes chez Ekrili, Grâce à elles vous pouvez choisir un bien en toute sérénité, mais aussi aider les autres locataires à choisir leurs biens.</p>
+                                            <p>- Donnez une evaluation entre 1 et 5.</p>
+                                            <p>- Ajoutez un commentaire si vous désirez.</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="row">
+                        <div class="col-3 mb-3">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home2">Généralités</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile2" >Déposer mon bien</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages2">Autres questions</a>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home2">
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t12"><a href="#" class="btn btn-light">Quel est le montant des frais de service de Ekrili?</a></h2>
+                                        <div class="wrapper wrapper12">
+                                            <p>La création de votre annonce de location est gratuite. Une fois votre annonce en ligne, les visiteurs intéressés peuvent réserver librement.</p>
+                                            <p>Le prix payé par le locataire se décompose de la manière suivante :</p>
+                                            <p>- Vous percevez 91,66% du montant</p>
+                                            <p>- Ekrili perçoit des frais de service de 8,33% représentant l'équivalent d'un mois de loyer par année de location, se qui correspond au montant restant.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t13"><a href="#" class="btn btn-light">Comment optimiser vos chances de louer votre bien?</a></h2>
+                                        <div class="wrapper wrapper13">
+                                            <p><b>Prenez de belles photos de votre bien</b></p>
+                                            <p>Lorsque les locataires cherchent un bien, les photos sont les premiers éléments qu’ils regardent. Plus elles sont belles, plus elles donnent envie de louer votre bien.</p>
+                                            <p><b>Choisissez le juste prix</b></p>
+                                            <p>Le juste prix, c’est un prix cohérent avec les critères de votre bien, mais aussi avec le niveau de la demande. Si vous êtes un nouveau propriétaire, commencez avec un prix assez bas pour effectuer facilement vos premières locations et ainsi recueillir des évaluations positives.</p>
+                                            <p><b>Rédigez une description de votre bien</b></p>
+                                            <p>Donnez le maximum de précisions aux locataires : la localisation, le voisinage, état de propreté, petits problèmes à signaler, équipements …</p>
+                                            <p><b>Répondez rapidement aux demandes</b></p>
+                                            <p>Plus vous répondez vite, plus votre annonce remonte dans les résultats de recherche.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t14"><a href="#" class="btn btn-light">Les biens ne m'appartiennent pas, puis-je les louer quand même?</a></h2>
+                                        <div class="wrapper wrapper14">
+                                            <p>Non, il est indispensable de posséder son propre bien pour devenir propriétaire sur Ekrili.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-profile2">
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t15"><a href="#" class="btn btn-light" style="height: 80px;"><p style="white-space: pre-wrap;">Comment prendre des photos de qualité afin d'optimiser mes chances de louer mon bien?</p></a></h2>
+                                        <div class="wrapper wrapper15">
+                                            <p>Voici quelques conseils pour prendre de belles photos :</p>
+                                            <p><b>Propreté avant tout :</b> nettoyez votre bien avant de prendre les photos.</p>
+                                            <p><b>Cadrage :</b> Essayez de faire rentrer le bien en entier dans la photo, les photos trop zoomées ne donnent pas un bon aperçu.</p>
+                                            <p><b>Luminosité :</b> privilégiez un cadre lumineux. Si besoin, sélectionnez le flash sur votre appareil pour supprimer les ombres. Ayez le soleil dans le dos pour éviter les contre-jours.</p>
+                                            <p><b>Couleurs :</b>Si votre maison est de couleur claire (blanche, grise), désélectionner le flash sur votre appareil afin d’avoir une photo attirante. A l’inverse, si votre maison est de couleur foncée (bleu nuit, noire), sélectionnez le flash sur votre appareil.</p>
+                                            <p><b>A éviter :</b> évitez les photos trop sombres, trop zoomées ou trop floues</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t16"><a href="#" class="btn btn-light">Puis-je inscrire plusieurs biens?</a></h2>
+                                        <div class="wrapper wrapper16">
+                                            <p>Bien sûr, il n’y a pas de limites au nombre de biens inscris.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t17"><a href="#" class="btn btn-light">Comment choisir mon prix de location?</a></h2>
+                                        <div class="wrapper wrapper17">
+                                            <p>C’est vous qui fixez le prix de location de votre bien.</p>
+                                            <p>Si vous êtes un nouvel hôte, il est préférable de choisir un prix légèrement inférieur à la moyenne afin d’attirer plus de visiteurs.</p>
+                                            <p>Vous pourrez ensuite, si vous le voulez, augmenter votre prix.</p>
+                                            <p>Vous percevrez 91,66% du prix de la location, le reste correspondant aux frais de service.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="list-messages2">
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t18"><a href="#" class="btn btn-light">Que faire si j'ai oublié mon mot de passe?</a></h2>
+                                        <div class="wrapper wrapper18">
+                                            <p>Si vous n'arrivez pas à vous connecter, essayez de réinitialiser votre mot de passe en cliquant sur "Mot de passe oublié" dans la fenêtre de connexion.</p>
+                                            <p>Si vous ne recevez pas l'email de réinitialisation du mot de passe :</p>
+                                            <p>- Patientez quelques minutes</p>
+                                            <p>- Vérifiez la section courrier indésirable (ou spam) de votre boîte mail</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t19"><a href="#" class="btn btn-light" style="height: 80px;"><p style="white-space: pre-wrap;">Que faire si j'ai oublié mon mot de passe ou je n'arrive pas à me connecter à mon compte?</p></a></h2>
+                                        <div class="wrapper wrapper19">
+                                            <p>Si vous ne parvenez pas à vous connecter à votre compte, deux possibilités :</p>
+                                            <p>- Votre mot de passe est incorrect : cliquez sur « mot de passe oublié ». Vous recevrez un email qui contient votre nouveau mot de passe.</p>
+                                            <p>- Vous essayez de vous connecter avec la mauvaise adresse mail : Vérifiez vos différentes adresses mails pour retrouver avec laquelle vous vous connectez sur Ekrili.</p> 
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3" id="toggle">
+                                        <h2 id="t20"><a href="#" class="btn btn-light">Quels types de biens puis-je proposer sur Ekrili?</a></h2>
+                                        <div class="wrapper wrapper20">
+                                            <p>Vous pouvez choisir entre ces types : Maison, Appartement, Garage, Terrain.</p>           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <img src="images/img/Ekrili_blanc1.png">
+                            <hr class="light">
+                            <p>Constantine, 25000</p>
+                            <p>
+                                <a href="http://localhost:8080/agence/conditions.html">Conditions générales</a>
+                            </p>
+                            <p>
+                                <a href="http://localhost:8080/agence/aide.html">Aide</a>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <hr class="light">
+                            <h5>Contactez-nous</h5>
+                            <hr class="light">
+                            <p>E-mail: EkriliAgency@gmail.com</p>
+                            <p>Service client: +213 658 087 841</p>
+                            <p>Service réclamation: +213 560 600 862</p>
+                        </div>
+                        <div class="col-12">
+                            <hr class="light-100">
+                            <h5>&copy; ekrili.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(document).ready(function(){
+                $("#t1").click(function(){
+                    $(".wrapper1").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t2").click(function(){
+                    $(".wrapper2").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t3").click(function(){
+                    $(".wrapper3").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t4").click(function(){
+                    $(".wrapper4").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t5").click(function(){
+                    $(".wrapper5").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t6").click(function(){
+                    $(".wrapper6").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t7").click(function(){
+                    $(".wrapper7").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t8").click(function(){
+                    $(".wrapper8").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t9").click(function(){
+                    $(".wrapper9").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t10").click(function(){
+                    $(".wrapper10").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t11").click(function(){
+                    $(".wrapper11").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t12").click(function(){
+                    $(".wrapper12").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t13").click(function(){
+                    $(".wrapper13").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t14").click(function(){
+                    $(".wrapper14").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t15").click(function(){
+                    $(".wrapper15").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t16").click(function(){
+                    $(".wrapper16").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t17").click(function(){
+                    $(".wrapper17").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t18").click(function(){
+                    $(".wrapper18").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t19").click(function(){
+                    $(".wrapper19").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#t20").click(function(){
+                    $(".wrapper20").slideToggle("medium");
+                });
+            });
+        </script>
+    </body>
+</html>

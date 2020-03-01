@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inscription</title>
+        <link rel="shortcut icon" type="img/png" href="http://localhost:8080/agence/images/img/flavicon.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="style/bootstrap/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+        <script src="style/bootstrap/js/bootstrap.min.js"></script>
+        <link href="style/css/Inscription.css" rel="stylesheet">
+        <link href="style/fa/css/fontawesome-all.min.css" rel="stylesheet">
+        <script src="jquery-ui/jquery.validate.js"></script>
+        <script type="text/javascript" src="jquery-ui/localization/messages_fr.js"> </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://localhost:8080/agence/index.jsp"><img src="images/img/ekrili_137x60.png"></a>
+            </div>
+        </nav>
+        <div class="modal-dialog">
+            <div class="main-section">
+                <div class="modal-content">
+                    <h5>Inscription</h5>
+                    <div class="hline"></div>
+                    <form id="idForm" class="col-12" method="POST"  action="http://localhost:8080/agence/InscriptionServlet">
+                        <input type="hidden" name="hidden" value="AjouterCompteAgent">
+                        <div class="form-group">
+                            <input class="form-control" type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="password" id="mdp" name="mdp" placeholder="Mot de passe">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="password" name="confirmerMdp" id="confirmerMdp" placeholder="Confirmer le mdp">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" id="pseudo" name="pseudo" placeholder="Pseudo">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="text" id="nom" name="nom" placeholder="Nom">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="text" id="prenom" name="prenom" placeholder="Prénom">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" id="adresse" name="adresse" placeholder="Adresse">
+                        </div>
+                        <label class="control-label" for="dateNaissance">Date de Naissance :</label>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="date" id="dateNaissance" name="dateNaissance">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control" type="number" id="numTel" name="numTel" placeholder="Numéro de telephone">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" id="sub">
+                            <i class="fas fa-sign-in-alt"></i> Inscription
+                        </button>
+                        <div class="condition" id="check2">
+                            <input type="checkbox" id="check" name="check">
+                            J'ai lu et j'accepte les <a href="http://localhost:8080/agence/conditions.html">Conditions Générales d’Utilisation</a>
+                        </div>
+                    </form>
+                    <div class="hline"></div>
+                    <p>
+                        Déjà Client? 
+                        <a href="http://localhost:8080/agence/Authentification.html">Connexion</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>©2018 ekrili. Tous droits réservés.</p>
+        </footer>
+        <script>
+            $(document).ready(function(){
+                jQuery.validator.addMethod("noSpace", function(value, element) { 
+                    return value.indexOf(" ") < 0 && value != ""; 
+                }, "Espace entre caractéres non autorisé");
+
+                
+                $.validator.addMethod("minAge", function(value, element, min) {
+                    var today = new Date();
+                    var birthDate = new Date(value);
+                    var age = today.getFullYear() - birthDate.getFullYear();
+                 
+                    if (age > min+1) {
+                        return true;
+                    }
+                 
+                    var m = today.getMonth() - birthDate.getMonth();
+                 
+                    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                    }
+                 
+                    return age >= min;
+                }, "Vous devez être âgé d'au moins 18 ans");
+                
+                $.validator.addMethod("checkEmail", 
+                                      function(value, element) {
+                    var result = false;
+                    $.ajax({
+                        url: "http://localhost:8080/agence/VerificationServlet",
+                        async: false,
+                        method: "post",
+                        data: {email: value,hidden:'email'},
+                        success: function(data) {   
+                            result = data == 'true';
+                        }
+                    });
+                    return result; 
+                },"Email deja utilisé veuillez essayez un autre."); 
+                $.validator.addMethod("checkPseudo", 
+                                      function(value, element) {
+                    var result = false;
+                    $.ajax({
+                        url: "http://localhost:8080/agence/VerificationServlet",
+                        async: false,
+                        method: "post",
+                        data: {pseudo: value,hidden:'pseudo'},
+                        success: function(data) {   
+                            result = data == 'true';
+                        }
+                    });
+                    return result; 
+                },"Pseudo deja utilisé veuillez essayez un autre.");
+
+                $('#idForm').validate({
+                    lang: 'fr',
+                    rules: {
+                        "email": {
+                            required: true,
+                            email: true,
+                            checkEmail: true
+                        }
+                        ,
+                        nom: {
+                            required: true,
+                        },
+                        prenom: {
+                            required: true,
+                        },
+                        "pseudo": {
+                            required: true,
+                            minlength :6,
+                            noSpace: true,
+                            checkPseudo : true
+                        },
+                        dateNaissance: {
+                            required: true,
+                            minAge: 18
+                        },
+                        adresse: {
+                            required: true,
+                        },
+                        mdp: {
+                            minlength : 6,
+                            required: true
+                        },
+                        confirmerMdp: {
+                            minlength : 6,
+                            equalTo : '#mdp',
+                            required: true
+                        },
+                        numTel: {
+                            required: true,
+                            minlength: 10,
+                            maxlength: 10 
+                        },
+                        check: {
+                            required: true
+                        }  
+                    }
+                });
+            });
+        </script>   
+    </body>
+</html>

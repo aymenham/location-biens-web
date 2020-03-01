@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Administrator</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="img/png" href="http://localhost:8080/agence/images/img/flavicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="style/bootstrap/js/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+        <script src="style/bootstrap/js/bootstrap.min.js"></script>
+        <link href="style/css/Administrator.css" rel="stylesheet">
+        <link href="style/fa/css/fontawesome-all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/img/Ekrili_blanc1.png"></a>
+            </div>
+        </nav>
+        <div class="modal-dialog bg-light rounded">
+            <div class="main-section">
+                <div id="Form" class="modal-content">
+                    <h5>Authentification des agents :</h5>
+                    <div class="hline"></div>
+                    <form id="idForm" method="POST" action="http://localhost:8080/agence/AuthentificationServlet">
+                        <input type="hidden" name="hidden" value="Administrator">
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i><input class="form-control" type="text" id="login" name="login" placeholder="Login">
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-lock"></i><input class="form-control" type="password" id="mdp" name="mdp" placeholder="Mot de passe">
+                        </div>
+                        <button id="sub" class="btn"><i class="fas fa-sign-in-alt"></i> Connexion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>©2018 ekrili. Tous droits réservés.</p>
+        </footer>
+    </body>
+</html>

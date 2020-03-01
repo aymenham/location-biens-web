@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins-Regular.ttf') format('ttf');
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-nav li{
+    padding-right: 10px;
+}
+.nav-link{
+    font-size: 1.1em;
+}
+footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+    border-top: 1px solid #d5d5d5;
+    bottom: 0px;
+}
+hr.light{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+hr.light-100{
+    border-top: 1px solid #d5d5d5;
+    width: 88%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+footer a, a:hover {
+    color: #d5d5d5;
+}
+#login-dp{
+    width: 200px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:#f7f7f7;
+}
+#login-dp .bottom{
+    width: 200px;
+    max-height: 50px;
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px 15px;
+}
+#login-dp .bottom p{
+    text-align: left;
+    font-size: 18px;
+}
+#login-dp button{
+    padding:5px 0px;
+    text-decoration:none;
+    font-size: 18px;
+    border:none;
+    outline:none;
+    background:none;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+/***    left menu ****/
+.sidebar{
+    max-width:300px;
+    background-color:#3f3f3f;
+    transition: all 0.5s  ease-in-out;
+    border-right: solid 1px #4d4d4d;
+}
+@media(min-width:768px){
+    .sidebar{
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        padding-top: 82px;
+        left: 0;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    #search-bg {
+        margin-left: 300px;
+    }
+    footer{
+        margin-left: 300px;
+    }
+}
+.sidebar ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.sidebar li div{
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 6px;
+    font-size: 18px;
+    color: #a3a3a3;
+    padding-left: 25px;
+}
+.sidebar li button{
+    display:block;
+    padding:10px 0px;
+    color:#fff;
+    text-decoration:none;
+    font-size: 18px;
+    padding-left: 25px;
+    border:none;
+    outline:none;
+    background:none;
+}
+.sidebar li form,.sidebar button{
+    cursor:pointer;
+}
+.sidebar li form:hover{
+    background-color:#000;
+}
+.sidebar li button:hover{
+    text-decoration:none;
+    color: #fff;
+}
+.sidebar li button i{
+    padding-right:10px;
+}
+.sidebar li form.active{
+    background-color:#000;
+    border-left:5px solid #298AC2;
+    transition: all 0.5s  ease-in-out;
+}
+.sidebar li a{
+    display:block;
+    padding:10px 0px;
+    color:#fff;
+    text-decoration:none;
+    font-size: 18px;
+    padding-left: 25px;
+    border:none;
+    outline:none;
+    background:none;
+    margin-top: -12;
+    margin-bottom: -16;
+}
+.sidebar li a:hover{
+    background-color:#000;
+}
+.sidebar li a i{
+    padding-right:10px;
+}
+.sidebar li a.active{
+    background-color:#000;
+    border-left:5px solid #298AC2;
+    transition: all 0.5s  ease-in-out;
+}
+@media(max-width:767px){
+    .sidebar{
+        min-width: 100%;
+    }
+}
+
+
+/*recherche*/
+.search{
+    padding-top: 30px;
+    margin: auto;
+}
+#slider, #slider2{
+    width: 30%;
+    max-width: 280px;
+    margin-top: 8px;
+}
+#surface{
+    padding-right: 5px; 
+}
+#prix{
+    padding-right: 40px; 
+}
+#input-select,#input-number,#input-select2,#input-number2{
+    width: 100px;
+    height: 40px;
+}
+#input-select,#input-select2{
+    margin-right: 20px;
+}
+#input-number,#input-number2{
+    margin-left: 20px;
+}
+#type,#wilaya{
+    width: 170px;
+}
+#appartement .form-control,#maison .form-control{
+    width: 100px;
+    margin-left: 8px;
+    margin-right: 20px;
+}
+#terrain{
+    width: 200px;
+}
+#check{
+    margin-right: 20px;
+}
+#dd{
+    position: relative;
+    top: 0px;
+    width: 700px;
+}
+#search-bg{
+    min-height: 420px;
+}
+/*recherche-end*/
+
+.welcome{
+    margin: 10px;
+    padding: 25px;
+    border-radius: 8px;
+    background: linear-gradient(to left, rgba(62, 113, 163, 0.72), rgba(68, 145, 222, 0.72));
+    font-size: 55px;
+    color: rgba(224, 224, 224, 0.6);
+    height: 130px;
+    box-shadow: 1px 1px 10px rgb(62, 113, 163);
+}
+.welcome h1{
+    color: white;
+}

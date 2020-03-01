@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins-Regular.ttf') format('ttf');
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url(../../images/img/light-blur-fog.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.modal-dialog{
+    height: 200px;
+}
+.modal-dialog .main-section {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0px;
+}
+.modal-content {
+    background-color: #f8f9fa;
+    opacity: .95;
+    padding: 0 18px;
+    box-shadow: 0px 0px 3px #848484;
+}
+.form-group{
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border: 2px solid #c6c6c6;
+    border-radius: 5px;
+}
+.form-group input{
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 38px;
+}
+.form-group .fa-user {
+    position: absolute;
+    font-size: 22px;
+    left: 24px;
+    padding-top: 10px;
+}
+.form-group .fa-lock {
+    position: absolute;
+    font-size: 22px;
+    left: 24px;
+    padding-top: 10px;
+}
+button {
+    margin: 5px 0 25px;
+}
+.btn {
+    background-color: #298AC2;
+    color: white;
+    font-size: 19px;
+    border-radius: 5px;
+    border-bottom: 4px solid #339fdd;
+}
+.btn:hover, .btn:focus{
+    background-color: #247aac;
+    border-bottom: 4px solid #247aac;
+}
+.forgot {
+    padding: 0px 15px 10px;
+    text-align: left;
+}
+h5{
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+.modal-dialog p{
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.hline {
+    margin: auto;
+    width:92%; 
+    height:1px;
+    background: #c6c6c6
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: #c6c6c6;
+    font-size: 12px;
+}
